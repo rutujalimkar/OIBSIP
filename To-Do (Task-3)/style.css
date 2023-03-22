@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+  padding:0;
+	box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background:url("https://images.wallpaperscraft.com/image/single/keyboard_keys_hand_206357_1400x1050.jpg");
+    background-size: cover;
+    opacity: 0.90;
+}
+
+header {
+	padding: 2rem ;
+	width: 60%;
+	margin: auto;
+}
+
+header h1{ 
+  text-align: center;
+	color: #ff6363;
+	margin-bottom: 2rem;
+}
+
+#new {
+	display: flex;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#input {
+	flex: 1 1 0%;
+	background-color: #374151;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: #d7d6d6;
+	font-size: 1.2rem;
+}
+
+#input::placeholder {
+	color: #d7d6d6;
+}
+
+#submit {
+	color: #ff6363;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+#submit:hover {
+	opacity: 0.8;
+}
+
+#submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	width: 50%;
+	margin: auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: #374151;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: #d3d3d3;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color:#d3d3d3;
+}
+
+
+.task .actions .edit {
+	background-image: black;
+	}
+
+.task .actions .delete {
+	color: white;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
